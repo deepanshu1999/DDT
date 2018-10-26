@@ -4,12 +4,12 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
+
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -46,8 +46,7 @@ public class DatabaseHelper {
         return userdata;
     }
 
-    public void putuserinfo(int Emi, int Totalpay,String name,int interest,String email)
-    {
+    public void putuserinfo(int Emi, int Totalpay,String name,int interest,String email) {
 
 
         Map<String, Object> user = new HashMap<>();
@@ -64,11 +63,9 @@ public class DatabaseHelper {
            }
        });
     }
-    public void putinfoBalanceSheet(String email, String membername, int monthlydata[12][2],String loantakingmonth,String groupid){
-      DocumentReference documentReference=  db.collection("BalanceSheet").document(groupid).;
-      Map<String,Object> balancesheet=new HashMap<>();
-      //balancesheet.put("U")
 
-      documentReference.set()
+    public void BuildBlankSheet(String communityid, ArrayList<String> usersemail){
+        DocumentReference documentReference=db.collection("BalanceSheet").document(communityid);
+        HashMap<String,Object> map=ne
     }
 }
