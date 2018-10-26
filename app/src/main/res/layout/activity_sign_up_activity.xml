@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Name"
+                    android:textAlignment="viewStart"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/name"
+                    android:drawablePadding="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:textSize="18sp"
+                    android:hint="Your Entry"
+                    android:textColorHint="@android:color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Gender"
+                    android:inputType="textEmailSubject"
+                    android:textAlignment="viewStart"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/gender"
+                    android:drawablePadding="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:textSize="18sp"
+                    android:hint="Your Entry"
+                    android:textColorHint="@android:color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Phone number"
+                    android:inputType="textEmailSubject"
+                    android:textAlignment="viewStart"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/PhoneNumber"
+                    android:drawablePadding="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:textSize="18sp"
+                    android:hint="Your Entry"
+                    android:textColorHint="@android:color/black"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:text="DOB"
+                    android:textAlignment="viewStart"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/DOB"
+                    android:drawablePadding="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:textSize="18sp"
+                    android:hint="Your Entry"
+                    android:textColorHint="@android:color/black"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Address"
+                    android:textAlignment="viewStart"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/location"
+                    android:drawablePadding="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:textSize="18sp"
+                    android:hint="Your Entry"
+                    android:textColorHint="@android:color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Bank Account Details"
+                    android:textAlignment="viewStart"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/BankAccount"
+                    android:drawablePadding="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:textSize="18sp"
+                    android:hint="Your Entry"
+                    android:textColorHint="@android:color/black"
+                    />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:elevation="6dp"
+                android:text="NEXT"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
