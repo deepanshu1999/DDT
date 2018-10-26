@@ -11,6 +11,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -55,19 +56,19 @@ public class DatabaseHelper {
         user.put("EMI",Emi );
         user.put("TOTALMONEY", Totalpay);
 
-        db.collection("users")
-                .add(email)
-                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                        Log.d("TAG", "DocumentSnapshot added with ID: " + documentReference.getId());
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.w("TAG", "Error adding document", e);
-                    }
-                });
+       DocumentReference ref=db.collection("Users").document(email);
+       ref.set(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+           @Override
+           public void onComplete(@NonNull Task<Void> task) {
+               Log.d("TASK","TASKSUCCESS");
+           }
+       });
+    }
+    public void putinfoBalanceSheet(String email, String membername, int monthlydata[12][2],String loantakingmonth,String groupid){
+      DocumentReference documentReference=  db.collection("BalanceSheet").document(groupid).;
+      Map<String,Object> balancesheet=new HashMap<>();
+      //balancesheet.put("U")
+
+      documentReference.set()
     }
 }
